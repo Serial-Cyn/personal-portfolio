@@ -19,7 +19,7 @@ export default function Navbar() {
                     <a href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a className="px-4 py-2 bg-purple-400 hover:bg-purple-500 text-gray-900 rounded-full" href="#contact">Get in Touch!</a>
+                    <a className="px-4 py-2 bg-sky-400 hover:bg-sky-500 text-gray-900 rounded-full" href="#contact">Get in Touch!</a>
                 </li>
             </ul>
         </div>
