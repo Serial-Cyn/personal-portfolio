@@ -1,5 +1,5 @@
-### Personal Portfolio Project
-# Initial Commit: Sep 30, 2025 - 20:14
+# Personal Portfolio Project
+### Initial Commit: Sep 30, 2025 - 20:14
 
 ## Greetings!
 Hello, World! This is my **first personal portfolio** to be deployed on the internet. I plan to compile all of my **best works** here and be publicly showcased for various purposes, it could be for recruiters, clients, friends, and more!
