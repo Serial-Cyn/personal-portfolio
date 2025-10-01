@@ -1,4 +1,16 @@
+'use client';
+
+import Button from "./button";
+
 export default function Navbar() {
+  function handleClick() {
+    const contactSection = document.getElementById("contact");
+
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <nav>
       <div className="fixed top-0 w-screen h-auto flex justify-center items-center p-6">
@@ -19,7 +31,7 @@ export default function Navbar() {
                     <a href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a className="px-4 py-2 bg-sky-400 hover:bg-sky-500 text-gray-900 rounded-full" href="#contact">Get in Touch!</a>
+                    <Button label="Get in Touch!" variant="primary" onClick={handleClick} />
                 </li>
             </ul>
         </div>

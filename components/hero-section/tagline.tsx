@@ -6,22 +6,14 @@ const zain = Zain({
 });
 
 export default function Tagline() {
-  
-    const debugStyles =
-    `
-        * {
-            outline: 1px solid red;
-        }
-    `;
 
   return (
     <div
       id="tagline"
-      className={`${zain.className} w-2xs sm:w-md lg:w-2/6 px-1 sm:px-0 h-auto flex flex-col justify-center items-center`}
+      className={`${zain.className} w-2xs sm:w-md lg:w-2/6 px-1 sm:px-0 h-auto flex flex-col justify-center items-center pointer-events-none`}
     >
-        <style>{debugStyles}</style>
       <div className="w-full text-6xl sm:text-8xl font-bold">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center leading-8">
           <h1>FUN</h1>
           <h1>IS</h1>
           <h1>MY</h1>
@@ -32,7 +24,7 @@ export default function Tagline() {
       </div>
 
       <div className="w-full text-4xl sm:text-5xl font-light">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center leading-8">
           <h2>TO</h2>
           <h2>TURN</h2>
           <h2>IDEAS</h2>
