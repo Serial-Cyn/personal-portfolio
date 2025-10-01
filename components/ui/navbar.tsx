@@ -8,7 +8,7 @@ export default function Navbar() {
 
         </div>
         <div className="w-full">
-            <ul className="w-full flex justify-end items-center text-lg font-medium space-x-16">
+            <ul className="hidden w-full md:flex justify-end items-center text-lg font-medium space-x-12 lg:space-x-16">
                 <li>
                     <a href="#about">About</a>
                 </li>
