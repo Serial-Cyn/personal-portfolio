@@ -1,5 +1,5 @@
 import Tagline from "./tagline";
-import ShowWorkBtn from "./showWorkBtn";
+import ShowWorkBtn from "./show-work-btn";
 import TimeCapsule from "./time-capsule";
 
 export default function Hero() {
