@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { motion } from "motion/react";
 import { useRef, useState, useEffect } from "react";
@@ -10,7 +10,7 @@ export default function JobValue() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setInView(entry.isIntersecting),
-      { threshold: 1.0 }
+      { threshold: 0.2 }
     );
 
     if (ref.current) observer.observe(ref.current);
