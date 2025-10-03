@@ -19,7 +19,7 @@ export default function ContactMe() {
         <div className="w-full sm:w-4/5 md:w-3/5 lg:w-4/5 h-full mb-8 sm:mb-0 flex flex-col lg:flex-row justify-start lg:justify-between items-start">
           <div className="w-full lg:w-2/5 mb-8 lg:mb-0">
             <h2 className="text-sm sm:text-lg text-zinc-400">
-              Let's talk business!
+              Let&apos;s talk business!
             </h2>
             <a className="mt-2 text-base sm:text-xl" href="mailto:christianmamplata.neust@gmail.com">
               christianmamplata.neust@gmail.com
