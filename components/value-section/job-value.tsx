@@ -20,7 +20,7 @@ export default function JobValue() {
 
   return (
     <section
-      id="job-value"
+      id="about"
       className="w-screen h-screen flex justify-center items-center px-6 text-4xl sm:text-5xl md:text-6xl leading-normal"
     >
       <motion.h1

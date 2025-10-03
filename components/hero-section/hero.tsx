@@ -4,7 +4,7 @@ import TimeCapsule from "./time-capsule";
 
 export default function Hero() {
     return (
-        <section className="w-screen h-screen flex flex-col justify-center items-center select-none">
+        <section id="home" className="w-screen h-screen flex flex-col justify-center items-center select-none">
             <Tagline />
             <ShowWorkBtn />
             <TimeCapsule />

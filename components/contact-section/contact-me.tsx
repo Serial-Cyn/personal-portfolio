@@ -21,9 +21,9 @@ export default function ContactMe() {
             <h2 className="text-sm sm:text-lg text-zinc-400">
               Let's talk business!
             </h2>
-            <h1 className="mt-2 text-base sm:text-xl">
+            <a className="mt-2 text-base sm:text-xl" href="mailto:christianmamplata.neust@gmail.com">
               christianmamplata.neust@gmail.com
-            </h1>
+            </a>
           </div>
           <div className="w-full lg:w-2/5 mb-8 sm:mb-0">
             <h2 className="text-sm sm:text-lg text-zinc-400">

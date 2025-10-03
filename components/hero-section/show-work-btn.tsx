@@ -14,7 +14,7 @@ export default function ShowWorkBtn() {
 
     return (
         <div className="mt-6">
-            <Button label="View my Projects!" variant="secondary" onClick={handleClick} />
+            <Button label="View my Projects!" variant="secondary-disabled" onClick={handleClick} />
         </div>
     );
 }
