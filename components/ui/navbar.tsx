@@ -55,7 +55,7 @@ export default function Navbar() {
               />
             </li>
           </ul>
-          <div className="md:hidden flex justify-end">
+          <div className="md:hidden flex justify-end text-shadow-none">
             <MenuBar />
           </div>
         </div>
