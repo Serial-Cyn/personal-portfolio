@@ -7,7 +7,7 @@ export default function SkillList() {
   const skills = [
     "Web Development",
     "UI/UX Design",
-    "Game Development",
+    "Godot Development",
     "Java Development",
     "C++ Development",
   ];
