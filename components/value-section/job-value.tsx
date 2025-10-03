@@ -29,7 +29,7 @@ export default function JobValue() {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        I design and develop intuitive software solutions that{" "}
+        I am a 3rd year student who designs and develops intuitive software solutions that{" "}
         <span className="font-bold text-sky-400">connect</span> with users and
         deliver{" "}
         <span className="font-bold text-sky-400">meaningful experiences.</span>
