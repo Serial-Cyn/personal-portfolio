@@ -41,7 +41,7 @@ export default function Navbar() {
             <Tooltip content={<TooltipContent />}>
               <li className="cursor-not-allowed">
                 {/* <Link href="#projects">Projects</Link> */}
-                <p className="text-zinc-800 pointer-events-none select-none">
+                <p className="text-zinc-600 pointer-events-none select-none">
                   Projects
                 </p>
               </li>

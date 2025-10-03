@@ -13,7 +13,7 @@ export default function Button({ label, variant, onClick }: ButtonProps) {
         .primary-disabled { background: var(--color-zinc-800); color: var(--color-zinc-600); cursor: not-allowed; }
         .secondary { border: 2px solid var(--color-zinc-400); color: var(--color-zinc-400); }
         .secondary:hover { border-color: var(--color-zinc-200); color: var(--color-zinc-200); }
-        .secondary-disabled { border: 2px solid var(--color-zinc-800); color: var(--color-zinc-800); cursor: not-allowed; }
+        .secondary-disabled { border: 2px solid var(--color-zinc-600); color: var(--color-zinc-600); cursor: not-allowed; }
     `;
 
   function TooltipContent() {
