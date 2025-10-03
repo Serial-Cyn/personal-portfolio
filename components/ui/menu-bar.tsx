@@ -53,7 +53,7 @@ export default function MenuBar() {
         transition={{ duration: 0.3 }}
         className="fixed top-0 right-0 w-screen h-screen px-6 bg-zinc-200"
       >
-        <ul className="flex flex-col justify-center items-start sm:items-end h-full gap-8 text-6xl font-bold text-zinc-900 select-none">
+        <ul className="flex flex-col justify-center items-start sm:items-end h-full gap-8 text-5xl sm:text-6xl font-bold text-zinc-900 select-none">
           {menuItems.map((item) => (
             <li
               key={item.name}
