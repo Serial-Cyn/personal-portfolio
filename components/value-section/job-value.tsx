@@ -29,10 +29,11 @@ export default function JobValue() {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        I am a 3rd year student who designs and develops intuitive software solutions that{" "}
+        I design and develop intuitive software solutions that{" "}
         <span className="font-bold text-sky-400">connect</span> with users and
         deliver{" "}
         <span className="font-bold text-sky-400">meaningful experiences.</span>
+        <p className="mt-4 pr-16 text-base sm:text-xl italic text-zinc-400">*I made this portfolio during my 3rd year college!</p>
       </motion.h1>
     </section>
   );
