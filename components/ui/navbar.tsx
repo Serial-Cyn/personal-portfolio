@@ -20,12 +20,12 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className="fixed top-0 w-screen h-auto flex justify-center items-center p-6 text-shadow-sm text-shadow-zinc-950">
+      <div className="fixed top-0 w-screen h-auto p-6 pb-2 md:pb-4 flex justify-center items-center bg-zinc-950/50 backdrop-blur-sm z-50">
         <Link className="w-1/4" href={"#home"}>
-          <h1 className="text-lg font-light tracking-wider pointer-events-none select-none">
+          <h1 className="text-base md:text-lg font-light tracking-wider pointer-events-none select-none">
             CHRISTIAN
           </h1>
-          <h1 className="pl-4 text-lg font-light tracking-wider pointer-events-none select-none">
+          <h1 className="pl-4 text-base md:text-lg font-light tracking-wider pointer-events-none select-none">
             MAMPLATA
           </h1>
         </Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
               />
             </li>
           </ul>
-          <div className="md:hidden flex justify-end text-shadow-none">
+          <div className="md:hidden flex justify-end">
             <MenuBar />
           </div>
         </div>
