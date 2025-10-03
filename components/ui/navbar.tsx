@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className="fixed top-0 w-screen h-auto p-6 pb-2 md:pb-4 flex justify-center items-center bg-zinc-950/50 backdrop-blur-sm z-50">
+      <div className="fixed top-0 w-screen h-auto p-6 pb-3 md:pb-4 flex justify-center items-center bg-zinc-950/50 backdrop-blur-sm z-50">
         <Link className="w-1/4" href={"#home"}>
           <h1 className="text-base md:text-lg font-light tracking-wider pointer-events-none select-none">
             CHRISTIAN
