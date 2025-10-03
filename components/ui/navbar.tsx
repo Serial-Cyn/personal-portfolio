@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Button from "./button";
 import { Tooltip } from "./tooltip";
+import MenuBar from "./menu-bar";
 
 export default function Navbar() {
   function handleClick() {
@@ -54,6 +55,9 @@ export default function Navbar() {
               />
             </li>
           </ul>
+          <div className="md:hidden flex justify-end">
+            <MenuBar />
+          </div>
         </div>
       </div>
     </nav>

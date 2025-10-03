@@ -144,8 +144,8 @@ const TriangleFilled = forwardRef<SVGSVGElement, SVGProps<SVGSVGElement>>((props
             <g
                 fill="none"
                 strokeLinecap="round"
-                stroke-linejoin="round"
-                stroke-width="2">
+                strokeLinejoin="round"
+                strokeWidth="2">
                 <path d="M0 0h24v24H0z"></path>
                 <path
                     fill="currentColor"
