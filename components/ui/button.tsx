@@ -8,7 +8,7 @@ type ButtonProps = {
 
 export default function Button({ label, variant, onClick }: ButtonProps) {
   const buttonStyles = `
-        .primary { background: var(--color-sky-400); color: var(--color-zinc-900); }
+        .primary { background: var(--color-sky-400); color: var(--color-zinc-950); }
         .primary:hover { background: var(--color-sky-500); }
         .primary-disabled { background: var(--color-zinc-800); color: var(--color-zinc-600); cursor: not-allowed; }
         .secondary { border: 2px solid var(--color-zinc-400); color: var(--color-zinc-400); }
