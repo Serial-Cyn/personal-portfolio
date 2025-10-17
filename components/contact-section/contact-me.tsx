@@ -4,7 +4,7 @@ export default function ContactMe() {
   return (
     <section
       id="contact"
-      className="w-screen px-6 h-screen mt-32 flex flex-col justify-center items-center"
+      className="min-w-full min-h-screen px-6 mt-32 flex flex-col justify-center items-center"
     >
       <div className="h-3/5 flex flex-col justify-center items-center gap-0 md:gap-4">
         <h2 className="text-lg sm:text-2xl md:text-4xl font-light">
