@@ -5,11 +5,14 @@ import { useRef, useState, useEffect } from "react";
 
 export default function SkillList() {
   const skills = [
-    "Web Development",
+    "React",
+    "Tailwind",
+    "TypeScript",
     "UI/UX Design",
-    "Godot Development",
-    "Java Development",
-    "C++ Development",
+    "Godot Engine",
+    "Java",
+    "C++",
+    "Python",
   ];
 
   const ref = useRef(null);
