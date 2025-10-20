@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
@@ -11,12 +12,7 @@ const featuredWorks = [
     {
         img: '/featured/monobit-splash.webp',
         title: "Monobit",
-        link: '',
-    },
-    {
-        img: '/featured/monobit-splash.webp',
-        title: "Java Heroes",
-        link: '',
+        link: '/monobit',
     },
 ]
 
@@ -61,10 +57,10 @@ export default function Holder() {
     return (
         <div ref={ref} className="relative min-w-full min-h-full overflow-hidden">
             {featuredWorks.map((work, index) => (
-                <div key={index} className="featured-section w-full h-full min-h-screen flex flex-col justify-center items-center">
+                <Link href={work.link} key={index} className="featured-section w-full h-full min-h-screen flex flex-col justify-center items-center">
                     <img className="absolute inset-0 object-cover w-full h-full brightness-50 rounded-4xl z-0" src={work.img} alt={work.title} />
                     <h1 className="relative w-full text-6xl lg:text-8xl text-center font-bold uppercase z-10">{work.title}</h1>
-                </div>
+                </Link>
             ))}
         </div>
     );
