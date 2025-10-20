@@ -37,16 +37,19 @@ export default function Navbar() {
             <li>
               <Link href="#expertise">Expertise</Link>
             </li>
-            {/* Remove Tooltip After Compilation of Projects */}
+            <li>
+              <Link href="#featured-works">Projects</Link>
+            </li>
+            {/* Remove Tooltip After Compilation of Projects
             <Tooltip content={<TooltipContent />}>
               <li className="cursor-not-allowed">
-                {/* <Link href="#projects">Projects</Link> */}
+                <Link href="#projects">Projects</Link>
                 <p className="text-zinc-600 pointer-events-none select-none">
                   Projects
                 </p>
               </li>
             </Tooltip>
-            {/* Remove Tooltip After Compilation of Projects */}
+            Remove Tooltip After Compilation of Projects */}
             <li>
               <Button
                 label="Get in Touch!"

@@ -10,6 +10,11 @@ gsap.registerPlugin(ScrollTrigger);
 const featuredWorks = [
     {
         img: '/featured/monobit-splash.webp',
+        title: "Projects",
+        link: '',
+    },
+    {
+        img: '/featured/monobit-splash.webp',
         title: "Monobit",
         link: '',
     },
@@ -43,7 +48,7 @@ export default function Holder() {
             gsap.to(lastPanel, {
                 opacity: 0,
                 yPercent: 0,
-                ease: "power4.out",
+                ease: "power1.out",
                 scrollTrigger: {
                     trigger: lastPanel,
                     start: "center center",

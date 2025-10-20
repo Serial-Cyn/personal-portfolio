@@ -6,11 +6,11 @@ export default function MenuBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "HOME", href: "#home", number: "01" },
-    { name: "ABOUT", href: "#about", number: "02" },
-    { name: "EXPERTISE", href: "#expertise", number: "03" },
-    { name: "PROJECTS", href: "#projects", number: "04", disabled: true },
-    { name: "CONTACT", href: "#contact", number: "05" },
+    { name: "HOME", href: "#home", number: "01", disabled: false },
+    { name: "ABOUT", href: "#about", number: "02", disabled: false },
+    { name: "EXPERTISE", href: "#expertise", number: "03", disabled: false },
+    { name: "PROJECTS", href: "#featured-works", number: "04", disabled: false },
+    { name: "CONTACT", href: "#contact", number: "05", disabled: false },
   ];
 
   function toggleMenu() {
