@@ -38,7 +38,7 @@ export default function Navbar() {
               <Link href="#expertise">Expertise</Link>
             </li>
             <li>
-              <Link href="#featured-works">Projects</Link>
+              <Link href="#projects">Projects</Link>
             </li>
             {/* Remove Tooltip After Compilation of Projects
             <Tooltip content={<TooltipContent />}>
