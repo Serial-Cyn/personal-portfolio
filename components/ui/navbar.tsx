@@ -4,14 +4,13 @@ import Link from "next/link";
 import Button from "./button";
 import { Tooltip } from "./tooltip";
 import MenuBar from "./menu-bar";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
-  function handleClick() {
-    const contactSection = document.getElementById("contact");
+  const router = useRouter();
 
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
+  function handleClick() {
+    router.push("/#contact");
   }
 
   function TooltipContent() {
@@ -21,7 +20,7 @@ export default function Navbar() {
   return (
     <nav>
       <div className="fixed top-0 w-screen h-auto p-6 pb-3 md:pb-4 flex justify-center items-center bg-zinc-950/50 backdrop-blur-sm z-50">
-        <Link className="w-1/4" href={"#home"}>
+        <Link className="w-1/4" href={"/#home"}>
           <h1 className="text-base md:text-lg font-light tracking-wider pointer-events-none select-none">
             CHRISTIAN
           </h1>
@@ -32,13 +31,13 @@ export default function Navbar() {
         <div className="w-full">
           <ul className="hidden w-full md:flex justify-end items-center text-lg font-medium space-x-12 lg:space-x-16">
             <li>
-              <Link href="#about">About</Link>
+              <Link href="/#about">About</Link>
             </li>
             <li>
-              <Link href="#expertise">Expertise</Link>
+              <Link href="/#expertise">Expertise</Link>
             </li>
             <li>
-              <Link href="#projects">Projects</Link>
+              <Link href="/#projects">Projects</Link>
             </li>
             {/* Remove Tooltip After Compilation of Projects
             <Tooltip content={<TooltipContent />}>
