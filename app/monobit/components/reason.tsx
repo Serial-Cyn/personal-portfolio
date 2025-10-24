@@ -28,7 +28,7 @@ export default function Reason() {
         transition={{ duration: 0.6 }}
       >
         Inspired to help people in learning programming languages efficiently
-        and in an engaging way!
+        through an engaging way!
       </motion.h1>
     </section>
   );
