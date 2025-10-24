@@ -1,3 +1,5 @@
+'use client';
+
 import { Tooltip } from "./tooltip";
 
 type ButtonProps = {

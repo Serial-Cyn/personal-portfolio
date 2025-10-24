@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 // List of featured works
 const featuredWorks = [
     {
-        img: '/featured/monobit-splash.webp',
+        img: '/featured/monobit/splash.webp',
         title: "Monobit",
         link: '/monobit',
     },
