@@ -10,7 +10,7 @@ export default function Tagline() {
   return (
     <div
       id="tagline"
-      className={`${zain.className} w-2xs sm:w-md lg:w-2/6 px-1 sm:px-0 h-auto flex flex-col justify-center items-center pointer-events-none`}
+      className={`${zain.className} w-2xs sm:w-md lg:w-2/6 max-w-md px-1 sm:px-0 h-auto flex flex-col justify-center items-center pointer-events-none`}
     >
       <div className="w-full text-6xl sm:text-8xl font-bold">
         <div className="flex justify-between items-center leading-8">
