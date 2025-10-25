@@ -21,15 +21,15 @@ export default function Navbar() {
     <nav>
       <div className="fixed top-0 w-screen h-auto p-6 pb-3 md:pb-4 flex justify-center items-center bg-zinc-950/50 backdrop-blur-sm z-50">
         <Link className="w-1/4" href={"/#home"}>
-          <h1 className="text-base md:text-lg font-light tracking-wider pointer-events-none select-none">
+          <h1 className="text-base md:text-lg 2xl:text-3xl font-light tracking-wider pointer-events-none select-none">
             CHRISTIAN
           </h1>
-          <h1 className="pl-4 text-base md:text-lg font-light tracking-wider pointer-events-none select-none">
+          <h1 className="pl-4 text-base md:text-lg 2xl:text-3xl font-light tracking-wider pointer-events-none select-none">
             MAMPLATA
           </h1>
         </Link>
         <div className="w-full">
-          <ul className="hidden w-full md:flex justify-end items-center text-lg font-medium space-x-12 lg:space-x-16">
+          <ul className="hidden w-full md:flex justify-end items-center text-lg 2xl:text-3xl font-medium space-x-12 lg:space-x-16">
             <li>
               <Link href="/#about">About</Link>
             </li>

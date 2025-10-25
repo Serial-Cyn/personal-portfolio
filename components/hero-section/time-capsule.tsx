@@ -57,7 +57,7 @@ export default function TimeCapsule() {
       <style>{greetStyles}</style>
       <div
         id="capsule"
-        className="absolute bottom-0 w-4/5 sm:w-1/2 mb-8 py-2 flex justify-center items-center text-zinc-400 border border-zinc-400 rounded-full pointer-events-none"
+        className="absolute bottom-0 w-4/5 sm:w-1/2 mb-8 py-2 flex justify-center items-center 2xl:text-2xl text-zinc-400 border border-zinc-400 rounded-full pointer-events-none"
       >
         <div className="w-1/5 flex justify-center items-center">
           <time>{time}</time>

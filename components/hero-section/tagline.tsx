@@ -10,9 +10,9 @@ export default function Tagline() {
   return (
     <div
       id="tagline"
-      className={`${zain.className} w-2xs sm:w-md lg:w-2/6 max-w-md px-1 sm:px-0 h-auto flex flex-col justify-center items-center pointer-events-none`}
+      className={`${zain.className} w-2xs sm:w-md lg:min-w-sm lg:w-2/5 max-w-md 2xl:max-w-xl px-1 sm:px-0 h-auto flex flex-col justify-center items-center pointer-events-none`}
     >
-      <div className="w-full text-6xl sm:text-8xl font-bold">
+      <div className="w-full text-6xl sm:text-8xl 2xl:text-9xl font-bold">
         <div className="flex justify-between items-center leading-8">
           <h1>FUN</h1>
           <h1>IS</h1>
@@ -23,7 +23,7 @@ export default function Tagline() {
         </div>
       </div>
 
-      <div className="w-full text-4xl sm:text-5xl font-light">
+      <div className="w-full text-4xl sm:text-5xl 2xl:text-6xl font-light">
         <div className="flex justify-between items-center leading-8">
           <h2>TO</h2>
           <h2>TURN</h2>
