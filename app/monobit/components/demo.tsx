@@ -19,7 +19,7 @@ export default function Demo() {
   }, []);
 
   return (
-    <section className="hidden lg:flex w-full h-screen p-6">
+    <section id="demo" className="hidden lg:flex w-full h-screen p-6">
       <motion.div
         ref={ref}
         className="w-full h-full"

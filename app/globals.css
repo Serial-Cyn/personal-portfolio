@@ -30,3 +30,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
 }
+
+* {
+  outline: 1px solid red;
+}

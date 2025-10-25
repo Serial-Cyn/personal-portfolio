@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Button from "@/components/ui/button";
 
@@ -7,37 +7,52 @@ type HeadlineProps = {
   year: string;
   img: string;
   techStack: string[];
-  url: string;
 };
 
-export default function Headline({ title, year, img, techStack, url }: HeadlineProps) {
+export default function Headline({
+  title,
+  year,
+  img,
+  techStack,
+}: HeadlineProps) {
 
-    function handleClick() {
-        window.open(url, "_blank");
+  function handleClick() {
+    const TARGET_SECTION = document.getElementById("demo");
+
+    if (TARGET_SECTION) {
+      TARGET_SECTION.scrollIntoView({ behavior: "smooth" });
+    } else {
+      alert("Target section not found");
     }
+  }
 
   return (
-    <section id="headline" className="min-w-full min-h-screen px-6 pt-32">
+    <section id="headline" className="min-w-full h-screen px-6 pt-32">
       <div className="w-full h-full flex flex-col justify-center">
         <div>
           <h1 className="text-4xl md:text-6xl font-bold uppercase">{title}</h1>
           <p className="mb-4 text-base md:text-xl text-zinc-600">{year}</p>
         </div>
         <div className="flex flex-col md:flex-row gap-4 md:gap-16">
-          <div>
+          <div className="2xl:w-3/5 max-w-2xl">
             <img
               src={img}
               alt={title}
-              className="w-full max-w-2xl object-contain rounded-2xl"
+              className="w-full max-w-2xl 2xl:max-w-6xl object-contain rounded-2xl"
             />
           </div>
-          <div className="text-base md:text-xl font-light text-zinc-400">
-            <h2 className="mb-0 md:mb-2">Developed with</h2>
-            <ul>
+          <div className="grow flex flex-col justify-between">
+            <div className="text-base md:text-xl 2xl:text-6xl font-light text-zinc-400">
+              <h2 className="mb-0 md:mb-2 2xl:mb-6">Developed with</h2>
+              <ul>
                 {techStack.map((tech, index) => (
-                    <li key={index}>{tech}</li>
+                  <li key={index}>{tech}</li>
                 ))}
-            </ul>
+              </ul>
+            </div>
+            <div className="flex justify-center mt-6 md:mt-4">
+              <Button label="Check it out!" variant="secondary" onClick={handleClick} />
+            </div>
           </div>
         </div>
       </div>

@@ -41,7 +41,7 @@ export default function Button({ label, variant, onClick }: ButtonProps) {
       {variant !== "secondary-disabled" && (
         <button
           onClick={onClick}
-          className={`btn ${variant} px-4 py-2 rounded-full cursor-pointer`}
+          className={`btn ${variant} px-4 2xl:px-6 py-2 2xl:py-4 2xl:text-4xl rounded-full cursor-pointer`}
         >
           {label}
         </button>
