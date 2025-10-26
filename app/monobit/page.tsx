@@ -1,10 +1,11 @@
 import Navbar from "@/components/ui/navbar";
-import Headline from "./components/headline";
-import Demo from "./components/demo";
-import Reason from "./components/reason";
+import Headline from "../../components/blog/headline";
+import Demo from "./demo";
+import Reason from "../../components/blog/reason";
+import Blog from "./blog";
 
 export default function Monobit() {
-  const techStack = ["Figma"];
+  const techStack = ["Figma", "Aseprite"];
 
   return (
     <>
@@ -14,9 +15,12 @@ export default function Monobit() {
         img="/featured/monobit/headline.webp"
         techStack={techStack}
       />
-      <Reason />
+      <Reason
+        reason="Inspired to help people in learning programming languages efficiently
+        through an engaging way!"
+      />
+      <Blog />
       <Demo />
-      <Navbar />
     </>
   );
 }

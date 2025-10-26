@@ -3,7 +3,11 @@
 import { motion } from "motion/react";
 import { useRef, useState, useEffect } from "react";
 
-export default function Reason() {
+type ReasonProps = {
+  reason: string;
+}
+
+export default function Reason({ reason }: ReasonProps) {
   const ref = useRef(null);
   const [inView, setInView] = useState(false);
 
@@ -27,8 +31,7 @@ export default function Reason() {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        Inspired to help people in learning programming languages efficiently
-        through an engaging way!
+        {reason}
       </motion.h1>
     </section>
   );

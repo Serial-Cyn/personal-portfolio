@@ -15,7 +15,6 @@ export default function Home() {
       <FeaturedWorks />
       <ContactMe />
       <Footer />
-      <Navbar />
     </section>
   );
 }
