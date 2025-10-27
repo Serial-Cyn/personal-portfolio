@@ -3,7 +3,7 @@ import Motion from "@/components/ui/motion"
 export default function Demo() {
   
   return (
-    <section id="demo" className="hidden lg:flex w-full h-screen p-6">
+    <section id="demo" className="flex w-full h-screen p-6">
       <Motion>
         <iframe
           title="Figma prototype"
