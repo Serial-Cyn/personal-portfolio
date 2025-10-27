@@ -1,5 +1,6 @@
 import Headline from "@/components/blog/headline";
 import Reason from "@/components/blog/reason";
+import Blog from "./blog";
 
 export default function JavaHeroes() {
   const techStack = ["Java, Aseprite"];
@@ -15,6 +16,7 @@ export default function JavaHeroes() {
       <Reason
         reason="My first ever project, created to help people to learn and understand how viruses work in a fun and engaging way!"
       />
+      <Blog />
     </>
   );
 }

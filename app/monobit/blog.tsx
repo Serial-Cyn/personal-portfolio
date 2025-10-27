@@ -19,7 +19,7 @@ export default function Blog() {
             features that would enhance user engagement and learning outcomes.
             The game was designed to include various levels, each focusing on
             different programming concepts, with challenges and quizzes to test
-            the player's knowledge. Interviewing potential users is also part of
+            the player&apos;s knowledge. Interviewing potential users is also part of
             the research process to gather pain spots and preferences, this
             allowed me to tailor the game mechanics and content to better suit
             the target audience.

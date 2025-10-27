@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Button from "@/components/ui/button";
 
 type HeadlineProps = {
@@ -35,7 +36,7 @@ export default function Headline({
         </div>
         <div className="flex flex-col md:flex-row gap-4 md:gap-16">
           <div className="2xl:w-3/5 max-w-2xl">
-            <img
+            <Image
               src={img}
               alt={title}
               className="w-full max-w-2xl 2xl:max-w-6xl object-contain rounded-2xl"
