@@ -2,8 +2,8 @@ export default function Blog() {
   return (
     <section className="px-6">
       <div>
-        <h1 className="text-6xl font-bold">How it started</h1>
-        <div className="text-2xl text-justify mt-4 leading-normal">
+        <h1 className="text-4xl lg:text-6xl font-bold">How it started</h1>
+        <div className="text-base lg:text-2xl text-justify mt-4 leading-normal">
           <p className="mb-4">
             Java Heroes is my first major project, and it all started with a
             simple idea. I wanted to create an educational game that would make
@@ -21,8 +21,8 @@ export default function Blog() {
         </div>
       </div>
       <div>
-        <h1 className="text-6xl font-bold mt-10">Development Journey</h1>
-        <div className="text-2xl text-justify mt-4 leading-normal">
+        <h1 className="text-4xl lg:text-6xl font-bold mt-10">Development Journey</h1>
+        <div className="text-base lg:text-2xl text-justify mt-4 leading-normal">
           <p className="mb-4">
             The development of Java Heroes took only a week, during which we went
             through several stages of planning&apos; designing, coding, and testing.
@@ -46,8 +46,8 @@ export default function Blog() {
         </div>
       </div>
       <div>
-        <h1 className="text-6xl font-bold mt-10">Future Plans</h1>
-        <div className="text-2xl text-justify mt-4 leading-normal">
+        <h1 className="text-4xl lg:text-6xl font-bold mt-10">Future Plans</h1>
+        <div className="text-base lg:text-2xl text-justify mt-4 leading-normal">
           <p className="mb-4">
             Looking ahead, I have ambitious plans for Java Heroes. I aim to
             expand the game by adding more levels, characters, and challenges to

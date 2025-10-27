@@ -59,7 +59,7 @@ export default function Holder() {
         <div ref={ref} className="relative min-w-full min-h-full overflow-hidden">
             {featuredWorks.map((work, index) => (
                 <Link href={work.link} key={index} className="featured-section w-full h-full min-h-screen flex flex-col justify-center items-center">
-                    <Image className="absolute inset-0 object-cover w-full h-full brightness-50 rounded-4xl z-0" src={work.img} alt={work.title} />
+                    <Image width={2000} height={2000} className="absolute inset-0 object-cover w-full h-full brightness-50 rounded-4xl z-0" src={work.img} alt={work.title} />
                     <h1 className="relative w-full text-6xl lg:text-8xl text-center font-bold uppercase z-10">{work.title}</h1>
                 </Link>
             ))}

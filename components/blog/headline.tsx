@@ -37,6 +37,8 @@ export default function Headline({
         <div className="flex flex-col md:flex-row gap-4 md:gap-16">
           <div className="2xl:w-3/5 max-w-2xl">
             <Image
+              width={2000}
+              height={2000}
               src={img}
               alt={title}
               className="w-full max-w-2xl 2xl:max-w-6xl object-contain rounded-2xl"
@@ -51,7 +53,7 @@ export default function Headline({
                 ))}
               </ul>
             </div>
-            <div className="flex justify-center mt-6 md:mt-4">
+            <div className="hidden lg:flex justify-center mt-6 md:mt-4">
               <Button label="Check it out!" variant="secondary" onClick={handleClick} />
             </div>
           </div>
