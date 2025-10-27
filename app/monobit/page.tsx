@@ -1,4 +1,3 @@
-import Navbar from "@/components/ui/navbar";
 import Headline from "../../components/blog/headline";
 import Demo from "./demo";
 import Reason from "../../components/blog/reason";

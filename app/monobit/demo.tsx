@@ -1,32 +1,10 @@
-"use client";
-
-import { motion } from "motion/react";
-import { useRef, useState, useEffect } from "react";
+import Motion from "@/components/ui/motion"
 
 export default function Demo() {
-  const ref = useRef(null);
-  const [inView, setInView] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => setInView(entry.isIntersecting),
-      { threshold: 0.2 }
-    );
-
-    if (ref.current) observer.observe(ref.current);
-
-    return () => observer.disconnect();
-  }, []);
-
+  
   return (
     <section id="demo" className="hidden lg:flex w-full h-screen p-6">
-      <motion.div
-        ref={ref}
-        className="w-full h-full"
-        initial={{ opacity: 0, y: 30 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.6 }}
-      >
+      <Motion>
         <iframe
           title="Figma prototype"
           className="w-full h-full border-0 rounded-2xl"
@@ -38,7 +16,7 @@ export default function Demo() {
               "calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom))",
           }}
         />
-      </motion.div>
+      </Motion>
     </section>
   );
 }
