@@ -1,16 +1,27 @@
+import Image from "next/image";
+
 export default function Blog() {
   return (
     <section className="px-6">
       <div>
         <h1 className="text-4xl lg:text-6xl font-bold">How it started</h1>
-        <div className="text-base lg:text-2xl text-justify mt-4 leading-normal">
-          <p className="mb-4">
-            Monobit was first initiated as an individual case study for a Major
-            Subject during my 2nd year at the university. The project aimed to
-            create an educational game that would help users learn programming
-            languages in, not only an effective and interactive way, but also a
-            fun way.
-          </p>
+        <div className="mx-8 text-base lg:text-2xl text-justify mt-4 font-light leading-normal">
+          <div className="flex mb-16 justify-center items-center gap-16">
+            <p>
+              Monobit was first initiated as an individual case study for a
+              Major Subject during my 2nd year at the university. The project
+              aimed to create an educational game that would help users learn
+              programming languages in, not only an effective and interactive
+              way, but also a fun way.
+            </p>
+            <Image
+              width={800}
+              height={800}
+              src="/featured/neust_logo.webp"
+              alt="NEUST LOGO"
+              className="w-1/5 h-auto mr-16 object-contain rounded-md"
+            />
+          </div>
           <p className="mb-4">
             This idea stemmed from the observation that many people struggle to
             grasp programming concepts through traditional learning methods. I
@@ -21,10 +32,10 @@ export default function Blog() {
           <p>
             The game was designed to include various levels, each focusing on
             different programming concepts, with challenges and quizzes to test
-            the player&apos;s knowledge. Interviewing potential users is also part of
-            the research process to gather pain spots and preferences, this
-            allowed me to tailor the game mechanics and content to better suit
-            the target audience.
+            the player&apos;s knowledge. Interviewing potential users is also
+            part of the research process to gather pain spots and preferences,
+            this allowed me to tailor the game mechanics and content to better
+            suit the target audience.
           </p>
         </div>
       </div>
@@ -32,7 +43,7 @@ export default function Blog() {
         <h1 className="text-4xl lg:text-6xl font-bold mt-10">
           Development Journey
         </h1>
-        <div className="text-base lg:text-2xl text-justify mt-4 leading-normal">
+        <div className="mx-8 text-base lg:text-2xl text-justify mt-4 font-light leading-normal">
           <p className="mb-4">
             The development of Monobit involved several stages, starting with
             prototyping and user testing. I utilized tools like Figma for UI/UX
@@ -58,7 +69,7 @@ export default function Blog() {
       </div>
       <div>
         <h1 className="text-4xl lg:text-6xl font-bold mt-10">Future Plans</h1>
-        <div className="text-base lg:text-2xl text-justify mt-4 leading-normal">
+        <div className="mx-8 text-base lg:text-2xl text-justify mt-4 font-light leading-normal">
           <p className="mb-4">
             Currently, Monobit is still a work in progress, with plans to expand
             its content and features. Future updates will include additional
