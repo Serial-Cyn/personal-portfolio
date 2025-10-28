@@ -3,13 +3,12 @@ import Image from "next/image";
 export default function Blog() {
   const demoPalette = ["#2C73C7", "#17AD57", "#8E44AD", "#FF4B4B", "#F49000"];
 
-
   return (
     <section className="px-6">
       <div>
         <h1 className="text-4xl lg:text-6xl font-bold">How it started</h1>
         <div className="mx-8 text-base lg:text-2xl text-justify mt-4 font-light leading-normal">
-          <div className="flex mb-16 justify-center items-center gap-16">
+          <div className="flex mb-16 justify-between items-center gap-16">
             <p>
               Monobit was first initiated as an individual case study for a
               Major Subject during my 2nd year at the university. The project
@@ -54,11 +53,29 @@ export default function Blog() {
             I focused on creating a simple yet engaging interface that would
             appeal to users of all ages.
           </p>
-          <div className="flex w-1/2 m-auto mb-16 min-h-64 justify-center items-center gap-6 rounded-2xl" style={{ backgroundColor: "#f7f7f7" }}>
-
+          <div
+            className="flex w-1/2 m-auto mb-16 min-h-64 justify-center items-center gap-6 rounded-2xl"
+            style={{ backgroundColor: "#f7f7f7" }}
+          >
             {demoPalette.map((color, index) => (
-              <div key={index} className="w-16 h-16 rounded-full" style={{ backgroundColor: color }}></div>
+              <div
+                key={index}
+                className="w-16 h-16 rounded-full"
+                style={{ backgroundColor: color }}
+              ></div>
             ))}
+          </div>
+          <div className="flex my-32 justify-center items-center gap-16">
+            <p className="text-zinc-400">
+              This is Suisei in her initial design!
+            </p>
+            <Image
+              width={800}
+              height={800}
+              src="/featured/monobit/initial-character-design.webp"
+              alt="Initial Character Design"
+              className="w-1/2 h-auto object-contain rounded-md mb-16"
+            />
           </div>
           <p className="mb-4">
             As the project progressed, I implemented feedback from user testing
