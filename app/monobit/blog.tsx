@@ -2,6 +2,7 @@ import Image from "next/image";
 
 export default function Blog() {
   const demoPalette = ["#2C73C7", "#17AD57", "#8E44AD", "#FF4B4B", "#F49000"];
+  const suisei = ["suisei-1", "suisei-2", "suisei-3"];
 
   return (
     <section className="px-6">
@@ -67,7 +68,11 @@ export default function Blog() {
           </div>
           <div className="flex my-32 justify-center items-center gap-16">
             <p className="text-zinc-400">
-              This is Suisei in her initial design!
+              This is Suisei in her initial design! I was too focused on
+              improving the design quality, and neglected to connect her to the
+              players. I realized that I should not be thinking how she will
+              look like in the end, but rather focus on who she is and what she
+              is thinking.
             </p>
             <Image
               width={800}
@@ -76,6 +81,23 @@ export default function Blog() {
               alt="Initial Character Design"
               className="w-1/2 h-auto object-contain rounded-md mb-16"
             />
+          </div>
+          <div className="flex my-32 justify-center items-center gap-16">
+            <p className="text-zinc-400">
+              This is Suisei now! She is cute and calm, and she has a strong
+              desire to learn and grow. She loves to explore new things and is
+              always eager to take on new challenges.
+            </p>
+            {suisei.map((img, index) => (
+              <Image
+                key={index}
+                width={800}
+                height={800}
+                src={`/featured/monobit/suisei/${img}.webp`}
+                alt={`Suisei ${index + 1} Design`}
+                className="w-1/5 -mx-8"
+              />
+            ))}
           </div>
           <p className="mb-4">
             As the project progressed, I implemented feedback from user testing
