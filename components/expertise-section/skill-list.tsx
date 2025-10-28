@@ -10,6 +10,8 @@ export default function SkillList() {
     "Java",
     "C++",
     "Python",
+    "SQL",
+    "Docker",
   ];
 
   return (
