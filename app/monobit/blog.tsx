@@ -1,6 +1,9 @@
 import Image from "next/image";
 
 export default function Blog() {
+  const demoPalette = ["#2C73C7", "#17AD57", "#8E44AD", "#FF4B4B", "#F49000"];
+
+
   return (
     <section className="px-6">
       <div>
@@ -44,13 +47,19 @@ export default function Blog() {
           Development Journey
         </h1>
         <div className="mx-8 text-base lg:text-2xl text-justify mt-4 font-light leading-normal">
-          <p className="mb-4">
+          <p className="mb-16">
             The development of Monobit involved several stages, starting with
             prototyping and user testing. I utilized tools like Figma for UI/UX
             design and Aseprite for creating pixel art graphics. At this stage,
             I focused on creating a simple yet engaging interface that would
             appeal to users of all ages.
           </p>
+          <div className="flex w-1/2 m-auto mb-16 min-h-64 justify-center items-center gap-6 rounded-2xl" style={{ backgroundColor: "#f7f7f7" }}>
+
+            {demoPalette.map((color, index) => (
+              <div key={index} className="w-16 h-16 rounded-full" style={{ backgroundColor: color }}></div>
+            ))}
+          </div>
           <p className="mb-4">
             As the project progressed, I implemented feedback from user testing
             to refine the gameplay mechanics and educational content. This
