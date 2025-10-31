@@ -30,7 +30,7 @@ export default function Button({ label, variant, onClick }: ButtonProps) {
           <span>
             <button
               onClick={onClick}
-              className={`btn ${variant} px-4 py-2 rounded-full cursor-not-allowed`}
+              className={`btn ${variant} px-4 2xl:px-6 py-2 2xl:py-4 2xl:text-4xl rounded-full cursor-not-allowed`}
               disabled
             >
               {label}
