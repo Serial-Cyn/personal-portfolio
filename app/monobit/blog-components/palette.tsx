@@ -1,15 +1,7 @@
-"use client";
-
-import Button from "@/components/ui/button";
 
 export default function Palette() {
-  function handleClick() {
-    alert("Full palette is not available yet!");
-  }
 
   const demoPalette = ["#2C73C7", "#17AD57", "#8E44AD", "#FF4B4B", "#F49000"];
-
-  let buttonLabel = "View Full Palette";
 
   return (
     <div className="flex justify-between items-center gap-16 my-32">
