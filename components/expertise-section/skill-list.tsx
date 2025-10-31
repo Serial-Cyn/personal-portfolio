@@ -2,16 +2,15 @@ import Motion from "../ui/motion";
 
 export default function SkillList() {
   const skills = [
+    "C++",
+    "Java",
+    "Python",
     "React",
     "Tailwind",
     "TypeScript",
     "UI/UX Design",
     "Godot Engine",
-    "Java",
-    "C++",
-    "Python",
     "SQL",
-    "Docker",
   ];
 
   return (
