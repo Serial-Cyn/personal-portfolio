@@ -1,3 +1,5 @@
+'use client';
+
 // Author: https://gourav.io/blog/react-tooltip-component //
 import { SVGProps, forwardRef, useEffect, useRef, useState, type ReactNode } from 'react';
 

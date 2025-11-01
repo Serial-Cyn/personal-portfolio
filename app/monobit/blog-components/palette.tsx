@@ -1,6 +1,6 @@
+import { Tooltip } from "@/components/ui/tooltip";
 
 export default function Palette() {
-
   const demoPalette = ["#2C73C7", "#17AD57", "#8E44AD", "#FF4B4B", "#F49000"];
 
   return (
@@ -13,11 +13,13 @@ export default function Palette() {
         style={{ backgroundColor: "#f7f7f7" }}
       >
         {demoPalette.map((color, index) => (
-          <div
-            key={index}
-            className="w-24 h-24 rounded-full"
-            style={{ backgroundColor: color }}
-          ></div>
+          <Tooltip key={index} content={color}>
+            <div
+              key={index}
+              className="w-24 h-24 rounded-full"
+              style={{ backgroundColor: color }}
+            ></div>
+          </Tooltip>
         ))}
       </div>
     </div>
