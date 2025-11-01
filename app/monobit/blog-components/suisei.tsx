@@ -5,7 +5,7 @@ export default function Suisei() {
 
   return (
     <div className="flex my-32 justify-between items-center gap-16">
-      <div>
+      <div className="flex items-center gap-8">
         <p className="text-zinc-400">
           This is Suisei in her initial design! I was too focused on improving
           the design quality, and neglected to connect her to the players. I
@@ -26,16 +26,20 @@ export default function Suisei() {
           to learn and grow. She loves to explore new things and is always eager
           to take on new challenges.
         </p>
-        {suisei.map((img, index) => (
-          <Image
-            key={index}
-            width={800}
-            height={800}
-            src={`/featured/monobit/suisei/${img}.webp`}
-            alt={`Suisei ${index + 1} Design`}
-            className="w-1/5 -mx-8"
-          />
-        ))}
+        <div className="flex mt-16 justify-between items-center gap-4"  >
+          {suisei.map((img, index) => (
+            <div id={`suisei-${index + 1}`} className="w-1/3 p-4 border-2 border-zinc-800 rounded-md" key={index}>
+              <Image
+                key={index}
+                width={800}
+                height={800}
+                src={`/featured/monobit/suisei/${img}.webp`}
+                alt={`Suisei ${index + 1} Design`}
+                className="full"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
